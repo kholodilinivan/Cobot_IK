@@ -14,14 +14,14 @@ public class InverseKinFollower : MonoBehaviour
 
     public float q01, q02, q03, q04, q05, q06;
 
-    private float thetha1, thetha2, thetha3, thetha4, thetha5, thetha6;
+    public float thetha1, thetha2, thetha3, thetha4, thetha5, thetha6;
 
     public GameObject robot;
 
     // point to calculate ik
-    float ox;
-    float oy;
-    float oz;
+    public float ox;
+    public float oy;
+    public float oz;
 
     public bool RobotOperate;
 
