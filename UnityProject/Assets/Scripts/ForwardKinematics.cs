@@ -240,6 +240,7 @@ public class ForwardKinematics : MonoBehaviour
     // Visualize in Scene view
     void OnDrawGizmos()
     {
+        /*
         if (!showDebugInfo) return;
 
         Gizmos.color = Color.green;
@@ -253,6 +254,7 @@ public class ForwardKinematics : MonoBehaviour
         Gizmos.DrawLine(currentPosition, currentPosition + currentRotation * Vector3.up * axisLength);
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(currentPosition, currentPosition + currentRotation * Vector3.forward * axisLength);
+        */
     }
 
     // Public getters

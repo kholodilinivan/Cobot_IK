@@ -74,21 +74,9 @@ public class InverseKin : MonoBehaviour
                                     new Vector4(0, 0, 0, 1));
         */
 
-        Matrix4x4 T = new Matrix4x4(new Vector4(-1, 0,  0, ox),
-                                    new Vector4( 0, 1,  0, oy),
-                                    new Vector4( 0, 0, -1, oz),
-                                    new Vector4( 0, 0,  0, 1));
-
-        // Rotation matrix of the ik point
-        Matrix4x4 R = new Matrix4x4(new Vector4(T[0, 0], T[1, 0], T[2, 0], 0),
-                                    new Vector4(T[0, 1], T[1, 1], T[2, 1], 0),
-                                    new Vector4(T[0, 2], T[1, 2], T[2, 2], 0),
-                                    new Vector4(0, 0, 0, 1));
-
-        Vector3 o = new Vector3(ox, oy, oz); // center point calculation
-        float xc = o.x - L6 * R[2, 0];
-        float yc = o.y - L6 * R[2, 1];
-        float zc = o.z - L6 * R[2, 2];
+        float xc = ox;
+        float yc = oy;
+        float zc = oz + L6;
 
         // calculate thetha1
         float r = Mathf.Sqrt(xc * xc + yc * yc);
