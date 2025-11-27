@@ -34,7 +34,7 @@ public class InverseKinFollower : MonoBehaviour
     private float L3 = 0.096f;
     private float L4 = 0.07505f;
     private float L5 = 0.0634f;
-    private float L6 = 0.0452f;
+    private float L6 = 0.0552f;
 
     // to calculate inverse kin manually
     // public InputField NewX, NewY, NewZ;
@@ -111,7 +111,7 @@ public class InverseKinFollower : MonoBehaviour
 
         // calculate thetha5, thetha6
         thetha5 = 90;
-        thetha6 = 90;
+        thetha6 = 90 - thetha1;
 
         // ModifyRobot(thetha1, thetha2, thetha3, thetha4, thetha5, thetha6);
 
